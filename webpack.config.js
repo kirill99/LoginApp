@@ -7,7 +7,7 @@ module.exports = {
     mode: 'development',
     entry: {
         polyfill: 'babel-polyfill',
-        app: './app.js'
+        app: './js/app.js'
     },
     output: {
         filename: '[contenthash].js',
