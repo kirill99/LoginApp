@@ -1,4 +1,151 @@
 body {
-  background-color: aqua;
+  margin: 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signin {
+  height: 100vh;
+}
+
+.signin .wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 80px;
+}
+
+.signin .wrapper .box {
+  width: 300px;
+}
+
+.signin .wrapper .box .input-item {
+  margin-bottom: 20px;
+}
+
+.signin .wrapper .box .input-item input[type="text"], .signin .wrapper .box .input-item input[type="password"] {
+  width: 100%;
+  padding: 2px 10px;
+  margin: 0;
+  outline: none;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.signin .wrapper .box .input-item label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.signin .wrapper .box input[type="submit"] {
+  width: 140px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #00b4e0;
+  border: none;
+}
+
+.signin .wrapper .box input[type="submit"]:hover {
+  background-color: #006e8a;
+  color: white;
+  -webkit-box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+}
+
+.signin .wrapper .box .send {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.signin .form {
+  height: 100vh;
+  width: 50vw;
+}
+
+.signin .title {
+  height: 100vh;
+  width: 50vw;
+  background-color: #00b4e0;
+}
+
+.signin .title .wrapper {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0 0 0 80px;
+}
+
+.signin .title .wrapper .box {
+  width: 500px;
+}
+
+.signin .title .wrapper .box p {
+  margin: 0 0 40px 0;
+  font-size: 36px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.signin .title .wrapper .box span {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 0 0 30px 0;
+  display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  .row {
+    display: block;
+  }
+  .signin .wrapper {
+    padding: 0 !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .signin .wrapper input[type="submit"] {
+    width: 140px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: white !important;
+    border: none;
+  }
+  .signin .wrapper input[type="submit"]:hover {
+    background-color: #006e8a;
+    -webkit-box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all ease .4s;
+    transition: all ease .4s;
+    color: black !important;
+  }
+  .signin .form {
+    width: 100vw;
+    position: relative;
+    z-index: 999;
+    top: 0;
+  }
+  .signin .title {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+  }
+  .signin .title .wrapper {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
