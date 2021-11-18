@@ -14,7 +14,7 @@
     "js",
     "webpack"
   ],
-  "author": "Safonov Kirill <safonovkirill1995@gmail.com>",
+  "author": "Kirill Safonov <safonovkirill1995@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
